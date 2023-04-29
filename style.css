@@ -1,0 +1,80 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2rem;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "Tarjeta1"
+    "Tarjeta2"
+    "Tarjeta3"
+    "Tarjeta4"
+    "footer"
+  ;
+}
+
+header {
+  grid-area: header;
+  border: 2px solid black;
+}
+
+aside {
+  grid-area: aside;
+  border: 2px solid black;
+}
+
+main {
+  grid-area: main;
+  border: 2px solid black;
+}
+
+.Tarjeta1 {
+  grid-area: Tarjeta1;
+  border: 2px solid black;
+}
+
+.Tarjeta2 {
+  grid-area: Tarjeta2;
+  border: 2px solid black;
+}
+
+.Tarjeta3 {
+  grid-area: Tarjeta3;
+  border: 2px solid black;
+}
+
+.Tarjeta4 {
+  grid-area: Tarjeta4;
+  border: 2px solid black;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.25rem;
+    grid-template-areas:
+      "header header header header header header"
+      ". aside main main main ."
+      ". aside main main main ."
+      ". aside main main main ."
+      ". Tarjeta1 Tarjeta2 Tarjeta3 Tarjeta4 ."
+      ". footer footer footer footer .";
+  }
+}
