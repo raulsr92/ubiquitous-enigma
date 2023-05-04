@@ -1,1 +1,4 @@
-# ubiquitous-enigma
+# Reto de la sesión 09 - Bootcamp CodiGo  de Tecsup
+
+Reto: Elaboración de las tarjetas y el footer
+Mira la demo de la pápgina:[Restaurant Azul](https://raulsr92.github.io/ubiquitous-enigma/)
